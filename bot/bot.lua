@@ -1,4 +1,4 @@
--- #Beyond Reborn Robot
+-- #poinshtan bot tm
 -- #
 
 tdcli = dofile('./tg/tdcli.lua')
@@ -8,7 +8,7 @@ require('./bot/utils')
 require('./libs/lua-redis')
 URL = require "socket.url"
 http = require "socket.http"
-https = require "ssl.https"
+https = requirBeyond Reborn Robote "ssl.https"
 ltn12 = require "ltn12"
 json = (loadfile "./libs/JSON.lua")()
 mimetype = (loadfile "./libs/mimetype.lua")()
@@ -19,7 +19,7 @@ local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
 chats = {}
 plugins = {}
-helper_id = 987654321 --Put Your Helper Bot ID Here
+helper_id = 410682920 --Put Your Helper Bot ID Here
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -90,11 +90,11 @@ function create_config( )
 		"fun",
 
 	},
-    sudo_users = {123456789, 987654321, sudo_id},
+    sudo_users = {425771035},
     admins = {},
-    disabled_channels = {},
+    disabled_channels = {-1001054230888},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Reborn v6.0
+    info_text = [[》@smoking_times
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
